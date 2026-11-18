@@ -1,0 +1,46 @@
+name: scorecraft
+description: "ScoreCraft - Éditeur de partitions musicales"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  xml: ^6.5.0
+  uuid: ^4.0.0
+  file_picker: ^8.0.0
+  archive: ^3.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  # ─── Polices ─────────────────────────────────────────────────────────────
+  fonts:
+    - family: Leland
+      fonts:
+        - asset: assets/fonts/Leland.otf
+    - family: LelandText
+      fonts:
+        - asset: assets/fonts/LelandText.otf
+    - family: Bravura
+      fonts:
+        - asset: assets/fonts/Bravura.otf
+
+  # ─── Assets ──────────────────────────────────────────────────────────────
+  assets:
+    # Métadonnées de la police Leland (bboxes, anchors, ligatures)
+    - assets/fonts/Leland.json
+    
+    - assets/fonts/Bravura.json
+    
+    # Table officielle SMuFL : nom → codepoint (W3C)
+    - assets/smufl/glyphnames.json
